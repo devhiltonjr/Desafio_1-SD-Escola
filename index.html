@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Escola Bahia</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/estilo.css">
+</head>
+
+<body>
+  <header class="barra_menu">
+    <div class="flex-container titulo">
+      <h1>Escola Bahia</h1>
+    </div>
+
+    <div class="flex-container menu">
+      <ul class="list-items flex">
+        <li class="item"><a href="#inadiplentes">Inadimplentes</a></li>
+        <li class="item"><a href="#inadiplentes_por_periodo">Inadimplentes por período</a></li>
+        <li class="item"><a href="#faturamento">Faturamento</a></li>
+        <li class="item"><a href="#deficit">Deficit</a></li>
+        <li class="item"><a href="#alunos_matriculados">Alunos matriculados</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="vazio"></div>
+  <!-- <div class="container">
+    <header class="cabecalho">
+      <div class="barraMenu"></div>
+    </header>-->
+  <section id="graficos">
+    <div class="grafico" id="inadiplentes">
+      <h2>Inadiplentes</h2>
+      <canvas id="myPieChart"></canvas>
+    </div>
+
+    <div class="grafico">
+      <h2>Faturamento</h2>
+      <canvas id="myPieChart1"></canvas>
+    </div>
+
+  </section>
+  <!-- <table class="tabela1">
+    </table> -->
+  <div class="tabelas">
+    <div id="inadiplentes">
+      <section class="flex-container column">
+        <div class="titulo_sec">
+          <h1>Inadiplentes</h1>
+        </div>
+        <div class="tabela tab">
+          <table id="tabela_inadiplentes" class="table table-bordered border-primary">
+          </table>
+        </div>
+      </section>
+    </div>
+    <section class="flex-container column" id="inadiplentes_por_periodo">
+      <div class="titulo_sec" id="inadiplentes_por_periodo">
+        <h1>Inadiplentes por período</h1>
+      </div>
+      <div class="tabela tab">
+        <table id="tabela_inadiplentes_por_periodo" class="table table-bordered">
+
+        </table>
+      </div>
+    </section>
+    <section class="flex-container column" id="faturamento">
+      <div class="titulo_sec">
+        <h1>Faturamento</h1>
+      </div>
+      <div class="tabela tab">
+        <table id="tabela_Faturamento" class="table table-bordered border-primary">
+        </table>
+      </div>
+    </section>
+    <section class="flex-container column">
+      <div class="titulo_sec" id="deficit">
+        <h1>Deficit</h1>
+      </div>
+      <div class="tabela tab">
+        <table id="tabela_Deficit" class="table table-bordered border-primary">
+        </table>
+      </div>
+    </section>
+    <section class="flex-container column">
+      <div class="titulo_sec" id="alunos_matriculados">
+        <h1>Alunos matriculados</h1>
+      </div>
+      <div class="tabela tab">
+        <table id="tabela_Número_total_de_alunos_matriculados" class="table table-bordered border-primary">
+        </table>
+      </div>
+    </section>
+  </div>
+  <footer class="rodape">
+    <div class="flex-container rodape">
+      <p>&copy; 2023 CSS Flexbox</p>
+      <p>Desenvolvido por:Hilton Freitas de Oliveira Junior</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="javascrpt/dados-desafio.js"></script>
+</body>
+
+</html>

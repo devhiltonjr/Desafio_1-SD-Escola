@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #dedddd;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul li a {
+    text-decoration: none;
+text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+}
+
+header {
+    background-color: #ffff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+}
+
+header h1 {
+    margin-left: 100px;
+}
+
+
+header .list-items {
+    display: flex;
+
+}
+
+header .menu ul li {
+    margin: 5px;
+    display: flex;
+
+
+}
+
+
+.list-items li a {
+    color: rgb(42, 40, 40);
+    font-weight: 700;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.barra_menu {
+    width: 100%;
+    position: fixed;
+}
+
+
+
+.flex-container #graficos {
+    text-align: center;
+
+}
+
+#graficos {
+
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#graficos h2 {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.tab {
+    background-color: #fff;
+    margin: 10px;
+    border: 3px solid rgb(27, 26, 26);
+
+}
+
+
+
+table {
+    text-align: center;
+    width: 350px;
+    padding: 50px;
+    font-size: 20px;
+
+}
+
+.tabela {
+    border: 1px solid rgba(0, 0, 0, 0.495);
+    padding: 20px;
+
+}
+
+section h1 {
+
+    padding-bottom: 20px;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.column {
+    flex-direction: column;
+}
+
+footer {
+    background-color: #ffff;
+}
+
+.rodape {
+
+    height: 50px;
+    display: flex;
+    color: rgb(100, 99, 99);
+    justify-content: center;
+    width: 100%;
+   
+}
+
+
+/*Mobile*/
+@media(max-width:992px) {
+    .flex-container {
+        flex-direction: column;
+        min-width:660px;
+    }
+
+    header h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    header .menu ul li {
+        font-size: 14px;
+        margin: 1px;
+        display: flex;
+        text-align: center;
+        border: 1px solid rgba(128, 128, 128, 0.21);
+     
+    
+      
+
+
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex .item {
+        flex-wrap: wrap;
+
+    }
+
+    header {
+        background-color: #ffff;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+        flex-direction: column;
+        font-size: auto;
+    }
+   footer{
+    background-color: #fff;
+   }
+    
+  .rodape{
+        display: flex;
+        text-align: center;       
+        font-size: auto;
+        width: 100%;    
+        }
+
+    footer p{
+        margin: auto;
+        text-align: center;
+     
+    }
+
+}
