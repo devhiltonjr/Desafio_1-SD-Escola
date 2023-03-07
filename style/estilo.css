@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 h1 {
     padding: 0;
     margin: 0;
-
 }
 
 body {
@@ -24,7 +22,7 @@ ul {
 
 ul li a {
     text-decoration: none;
-text-align: center;
+    text-align: center;
 }
 
 .flex-container {
@@ -47,17 +45,13 @@ header h1 {
     margin-left: 100px;
 }
 
-
 header .list-items {
     display: flex;
-
 }
 
 header .menu ul li {
     margin: 5px;
     display: flex;
-
-
 }
 
 
@@ -73,15 +67,11 @@ header .menu ul li {
     position: fixed;
 }
 
-
-
 .flex-container #graficos {
     text-align: center;
-
 }
 
 #graficos {
-
     padding-top: 150px;
     display: flex;
     justify-content: center;
@@ -92,14 +82,12 @@ header .menu ul li {
 #graficos h2 {
     text-align: center;
     margin-top: 10px;
-
 }
 
 .tab {
     background-color: #fff;
     margin: 10px;
     border: 3px solid rgb(27, 26, 26);
-
 }
 
 
@@ -109,19 +97,15 @@ table {
     width: 350px;
     padding: 50px;
     font-size: 20px;
-
 }
 
 .tabela {
     border: 1px solid rgba(0, 0, 0, 0.495);
     padding: 20px;
-
 }
 
 section h1 {
-
     padding-bottom: 20px;
-
 }
 
 section {
@@ -129,7 +113,6 @@ section {
     justify-content: space-around;
     text-align: center;
     padding: 30px;
-
 }
 
 .column {
@@ -141,21 +124,30 @@ footer {
 }
 
 .rodape {
-
     height: 50px;
     display: flex;
     color: rgb(100, 99, 99);
     justify-content: center;
     width: 100%;
-   
+}
+
+.main {
+    align-items: center;
 }
 
 
 /*Mobile*/
 @media(max-width:992px) {
     .flex-container {
+        display: flex;
+        max-width: 992px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .flex-container {
         flex-direction: column;
-        min-width:660px;
+        min-width: 675px;
     }
 
     header h1 {
@@ -163,20 +155,14 @@ footer {
         margin: 0;
         font-size: 30px;
         text-align: center;
-
     }
 
     header .menu ul li {
-        font-size: 14px;
+        font-size: auto;
         margin: 1px;
         display: flex;
         text-align: center;
         border: 1px solid rgba(128, 128, 128, 0.21);
-     
-    
-      
-
-
     }
 
     .flex {
@@ -197,21 +183,29 @@ footer {
         flex-direction: column;
         font-size: auto;
     }
-   footer{
-    background-color: #fff;
-   }
-    
-  .rodape{
-        display: flex;
-        text-align: center;       
-        font-size: auto;
-        width: 100%;    
-        }
 
-    footer p{
-        margin: auto;
-        text-align: center;
-     
+    footer {
+        background-color: #fff;
     }
 
+    .rodape {
+        display: flex;
+        text-align: center;
+        font-size: auto;
+        width: 675px;
+    }
+
+    footer p {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    #graficos {
+        padding-top: 200px;
+        margin-left: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
